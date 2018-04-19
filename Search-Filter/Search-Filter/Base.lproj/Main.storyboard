@@ -126,6 +126,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="fiterButtonTapped:" destination="kPp-kK-Bfw" eventType="touchUpInside" id="A6b-cM-CmY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -144,6 +147,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="TOKOPEDIA" id="1a0-mU-fUo"/>
+                    <connections>
+                        <outlet property="searchCollectionView" destination="ZOG-hK-y9z" id="HbX-GG-gGi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2Y-ob-pty" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
