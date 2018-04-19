@@ -164,9 +164,9 @@ class FilterVC: UIViewController {
     }
     
     @IBAction func shopTypeButtonTapped(_ sender: UIButton) {
-        //let vc = self.storyboard?.instantiateViewController(withIdentifier: "ShopType") as! ShopTypeController
-        //vc.filterController = self
-        //self.navigationController?.pushViewController(vc, animated: true)
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ShopType") as! ShopTypeVC
+        vc.filterController = self
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     

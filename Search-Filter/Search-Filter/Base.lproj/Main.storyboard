@@ -485,10 +485,10 @@
             </objects>
             <point key="canvasLocation" x="1360.8" y="-573.46326836581716"/>
         </scene>
-        <!--Shop Type Controller-->
+        <!--Shop TypeVC-->
         <scene sceneID="s4X-iG-jmM">
             <objects>
-                <viewController storyboardIdentifier="ShopType" id="xCF-hQ-WRq" customClass="ShopTypeController" customModule="Tokped_Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShopType" id="xCF-hQ-WRq" customClass="ShopTypeVC" customModule="Search_Filter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="amg-rQ-1Fz"/>
                         <viewControllerLayoutGuide type="bottom" id="KWu-3A-qdj"/>
@@ -506,6 +506,9 @@
                                             <constraint firstAttribute="width" secondItem="sZj-Gv-x0T" secondAttribute="height" multiplier="1:1" id="guS-C0-aZy"/>
                                         </constraints>
                                         <state key="normal" image="close"/>
+                                        <connections>
+                                            <action selector="closeButtonTapped:" destination="xCF-hQ-WRq" eventType="touchUpInside" id="gZg-Lp-Du4"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTM-Z7-oyn">
                                         <rect key="frame" x="69.5" y="23" width="82" height="20.5"/>
@@ -518,6 +521,9 @@
                                         <state key="normal" title="Reset">
                                             <color key="titleColor" red="0.27450980390000002" green="0.69803921570000005" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="resetButtonTapped:" destination="xCF-hQ-WRq" eventType="touchUpInside" id="KCi-at-9nq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -539,6 +545,9 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="XzV-sf-yad" secondAttribute="height" multiplier="1:1" id="a1U-2I-YMJ"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="goldRadioTapped:" destination="xCF-hQ-WRq" eventType="touchUpInside" id="OU7-rZ-qbo"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gold Merchant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHQ-jI-T0A">
                                         <rect key="frame" x="69.5" y="23.5" width="113.5" height="20.5"/>
@@ -570,6 +579,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="applyTapped:" destination="xCF-hQ-WRq" eventType="touchUpInside" id="kUZ-KW-mtl"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YW-LX-Uly">
                                 <rect key="frame" x="0.0" y="159" width="375" height="66.5"/>
@@ -579,6 +591,9 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="pNg-Er-xim" secondAttribute="height" multiplier="1:1" id="3Y7-jU-T2n"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="officialRadioTapped:" destination="xCF-hQ-WRq" eventType="touchUpInside" id="9s6-qw-Nij"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Official Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8K-Jd-Ha6">
                                         <rect key="frame" x="69.5" y="23" width="99.5" height="20.5"/>
@@ -616,6 +631,10 @@
                             <constraint firstItem="eJS-sk-SGI" firstAttribute="height" secondItem="l3K-68-mJn" secondAttribute="height" multiplier="0.1" id="zT2-BS-yjB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="goldMerchRadio" destination="XzV-sf-yad" id="MBu-kN-jZw"/>
+                        <outlet property="officialRadio" destination="pNg-Er-xim" id="NxP-5F-vJJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AHz-cE-E8y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
