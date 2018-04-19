@@ -27,7 +27,7 @@ class ProductVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(getData), name: NSNotification.Name(rawValue: "load"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadData), name: NSNotification.Name(rawValue: "load"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(resetFilter), name: NSNotification.Name(rawValue: "reset"), object: nil)
         
         self.resetFilter()
@@ -47,7 +47,7 @@ class ProductVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
         official = false
         fshop = 1
         
-        self.getData()
+        self.reloadData()
     }
     
     
@@ -105,6 +105,25 @@ class ProductVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
                 let status = jsonResult!["status"] as? [String: Any]
                 if (status!["message"] as! String == "OK"){
                     self.products += jsonResult!["data"] as! Array
+                    self.searchCollectionView.reloadData()
+                }
+        }
+    }
+    
+    @objc func reloadData() {
+        
+        print(key,rows,minPrice,maxPrice,wholesale,official,fshop)
+        
+        Alamofire.request(
+            URL(string: "https://ace.tokopedia.com/search/v2.5/product?q=\(key)&pmin=\(minPrice)&pmax=\(maxPrice)&wholesale=\(wholesale)&official=\(official)&fshop=\(fshop)&start=\(start)&rows=\(rows)")!,
+            method: .get)
+            .validate()
+            .responseJSON { (response) -> Void in
+                
+                let jsonResult = response.result.value as? [String: Any]
+                let status = jsonResult!["status"] as? [String: Any]
+                if (status!["message"] as! String == "OK"){
+                    self.products = jsonResult!["data"] as! Array
                     self.searchCollectionView.reloadData()
                 }
         }
