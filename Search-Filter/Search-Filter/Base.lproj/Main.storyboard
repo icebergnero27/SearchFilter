@@ -345,24 +345,24 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8p-CG-88F">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57z-Sf-Bit">
                                                                 <rect key="frame" x="134.5" y="0.0" width="40" height="40"/>
                                                                 <state key="normal" image="close2"/>
                                                                 <connections>
-                                                                    <action selector="goldMerchantTapped:" destination="1d3-2e-wbs" eventType="touchUpInside" id="jKA-U6-bME"/>
+                                                                    <action selector="goldMerchantTapped:" destination="1d3-2e-wbs" eventType="touchUpInside" id="hMH-dt-f5j"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
+                                                            <constraint firstItem="57z-Sf-Bit" firstAttribute="height" secondItem="wOg-4D-KY4" secondAttribute="height" id="8nY-i7-3iO"/>
                                                             <constraint firstItem="wOg-4D-KY4" firstAttribute="top" secondItem="DtS-3t-loA" secondAttribute="top" id="DUg-db-wRd"/>
-                                                            <constraint firstAttribute="trailing" secondItem="r8p-CG-88F" secondAttribute="trailing" constant="3" id="FcV-ER-KTP"/>
-                                                            <constraint firstItem="r8p-CG-88F" firstAttribute="centerY" secondItem="wOg-4D-KY4" secondAttribute="centerY" id="S7Q-yg-hFc"/>
+                                                            <constraint firstItem="57z-Sf-Bit" firstAttribute="centerY" secondItem="wOg-4D-KY4" secondAttribute="centerY" id="G9w-zX-GQb"/>
                                                             <constraint firstItem="wOg-4D-KY4" firstAttribute="leading" secondItem="DtS-3t-loA" secondAttribute="leading" id="ccr-oH-LQ9"/>
-                                                            <constraint firstItem="r8p-CG-88F" firstAttribute="width" secondItem="wOg-4D-KY4" secondAttribute="height" multiplier="1:1" id="i9x-Dz-gty"/>
+                                                            <constraint firstItem="57z-Sf-Bit" firstAttribute="width" secondItem="wOg-4D-KY4" secondAttribute="height" multiplier="1:1" id="e9h-TO-I8f"/>
                                                             <constraint firstAttribute="height" constant="40" id="jGw-tG-68D"/>
                                                             <constraint firstItem="wOg-4D-KY4" firstAttribute="height" secondItem="DtS-3t-loA" secondAttribute="height" id="pkC-gv-HcZ"/>
-                                                            <constraint firstItem="r8p-CG-88F" firstAttribute="height" secondItem="wOg-4D-KY4" secondAttribute="height" id="sSw-P0-ass"/>
+                                                            <constraint firstAttribute="trailing" secondItem="57z-Sf-Bit" secondAttribute="trailing" constant="3" id="rFx-8e-fkf"/>
                                                             <constraint firstItem="wOg-4D-KY4" firstAttribute="width" secondItem="DtS-3t-loA" secondAttribute="width" id="udj-n5-qyV"/>
                                                         </constraints>
                                                     </view>
@@ -375,25 +375,27 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpc-br-Qbq">
-                                                                <rect key="frame" x="134.5" y="0.0" width="40" height="40"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFE-9q-wZT">
+                                                                <rect key="frame" x="134.5" y="-0.5" width="40" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="zFE-9q-wZT" secondAttribute="height" multiplier="1:1" id="I8l-7Q-uaq"/>
+                                                                </constraints>
                                                                 <state key="normal" image="close2"/>
                                                                 <connections>
-                                                                    <action selector="officialStoreTapped:" destination="1d3-2e-wbs" eventType="touchUpInside" id="TKK-tP-bf0"/>
+                                                                    <action selector="officialStoreTapped:" destination="1d3-2e-wbs" eventType="touchUpInside" id="Zfc-Jl-5zI"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="PGV-QM-bja" secondAttribute="trailing" priority="750" constant="10" id="0r3-JJ-ibc"/>
+                                                            <constraint firstItem="zFE-9q-wZT" firstAttribute="height" secondItem="chU-Br-erh" secondAttribute="height" id="2CU-ZM-7ei"/>
                                                             <constraint firstItem="PGV-QM-bja" firstAttribute="leading" secondItem="chU-Br-erh" secondAttribute="leading" constant="10" id="AoW-M5-4UL"/>
                                                             <constraint firstItem="PGV-QM-bja" firstAttribute="height" secondItem="chU-Br-erh" secondAttribute="height" id="Chr-bA-eTT"/>
                                                             <constraint firstItem="PGV-QM-bja" firstAttribute="width" secondItem="chU-Br-erh" secondAttribute="width" id="DdH-rh-49E"/>
-                                                            <constraint firstItem="zpc-br-Qbq" firstAttribute="width" secondItem="PGV-QM-bja" secondAttribute="height" multiplier="1:1" id="Hs6-lO-mFk"/>
-                                                            <constraint firstItem="zpc-br-Qbq" firstAttribute="centerY" secondItem="PGV-QM-bja" secondAttribute="centerY" id="SOf-RX-mWG"/>
-                                                            <constraint firstItem="zpc-br-Qbq" firstAttribute="height" secondItem="PGV-QM-bja" secondAttribute="height" id="gUN-vb-BfC"/>
+                                                            <constraint firstAttribute="trailing" secondItem="zFE-9q-wZT" secondAttribute="trailing" constant="3" id="TCX-ce-4bG"/>
+                                                            <constraint firstItem="zFE-9q-wZT" firstAttribute="centerY" secondItem="chU-Br-erh" secondAttribute="centerY" id="nvD-6H-lGk"/>
                                                             <constraint firstItem="PGV-QM-bja" firstAttribute="top" secondItem="chU-Br-erh" secondAttribute="top" id="qAq-Od-dFd"/>
-                                                            <constraint firstAttribute="trailing" secondItem="zpc-br-Qbq" secondAttribute="trailing" constant="3" id="wbf-f2-tyV"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -473,10 +475,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="csw-1V-bq1"/>
                     <connections>
-                        <outlet property="goldMerchantView" destination="wOg-4D-KY4" id="ghC-Ht-Op4"/>
+                        <outlet property="goldMerchantView" destination="DtS-3t-loA" id="eH3-qd-gSR"/>
                         <outlet property="maximumPriceLabel" destination="Lsq-gb-pSO" id="b1a-yb-2zy"/>
                         <outlet property="minimumPriceLabel" destination="HIq-26-iWn" id="LQg-lk-mvR"/>
-                        <outlet property="officialStoreView" destination="PGV-QM-bja" id="VTl-HP-upa"/>
+                        <outlet property="officialStoreView" destination="chU-Br-erh" id="xbK-7Y-R3e"/>
                         <outlet property="rangeView" destination="sax-2P-dtP" id="dgy-dh-jjY"/>
                         <outlet property="wholeSaleSwitch" destination="BTN-pH-u2b" id="ijz-Oo-YQX"/>
                     </connections>
