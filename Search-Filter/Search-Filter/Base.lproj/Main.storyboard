@@ -96,9 +96,9 @@
                                                     <constraint firstItem="Ofr-5I-3xq" firstAttribute="width" secondItem="zr8-GB-vMc" secondAttribute="width" id="tqE-Ei-S0v"/>
                                                 </constraints>
                                                 <connections>
-                                                    <outlet property="productImageView" destination="RCa-ez-tkx" id="SRt-WJ-hN6"/>
-                                                    <outlet property="productNameLabel" destination="zr8-GB-vMc" id="iF2-Jl-Px8"/>
-                                                    <outlet property="productPriceLabel" destination="Ofr-5I-3xq" id="ScR-rh-wLT"/>
+                                                    <outlet property="productImageView" destination="RCa-ez-tkx" id="fPd-ci-DfF"/>
+                                                    <outlet property="productNameLabel" destination="zr8-GB-vMc" id="dhs-om-MLx"/>
+                                                    <outlet property="productPriceLabel" destination="Ofr-5I-3xq" id="z7U-m8-Fsg"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
