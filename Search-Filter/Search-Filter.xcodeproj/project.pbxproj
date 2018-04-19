@@ -17,6 +17,7 @@
 		A9E65EA6208930E60059E935 /* Search_FilterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E65EA5208930E60059E935 /* Search_FilterUITests.swift */; };
 		A9E65EB6208933440059E935 /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E65EB5208933440059E935 /* ProductVC.swift */; };
 		A9E65EBA208937180059E935 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E65EB9208937180059E935 /* ProductCell.swift */; };
+		A9E65EBC208939AC0059E935 /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E65EBB208939AC0059E935 /* FilterVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		A9E65EA7208930E60059E935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9E65EB5208933440059E935 /* ProductVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
 		A9E65EB9208937180059E935 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		A9E65EBB208939AC0059E935 /* FilterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
 		D5769EC3B76EF8B8F09AB16B /* Pods_Search_Filter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Search_Filter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C22D363A22B858294B0C1E /* Pods-Search-Filter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search-Filter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Search-Filter/Pods-Search-Filter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +135,7 @@
 				A9E65E8E208930E60059E935 /* LaunchScreen.storyboard */,
 				A9E65E91208930E60059E935 /* Info.plist */,
 				A9E65EB9208937180059E935 /* ProductCell.swift */,
+				A9E65EBB208939AC0059E935 /* FilterVC.swift */,
 			);
 			path = "Search-Filter";
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9E65EBC208939AC0059E935 /* FilterVC.swift in Sources */,
 				A9E65EB6208933440059E935 /* ProductVC.swift in Sources */,
 				A9E65EBA208937180059E935 /* ProductCell.swift in Sources */,
 				A9E65E88208930E60059E935 /* ViewController.swift in Sources */,
