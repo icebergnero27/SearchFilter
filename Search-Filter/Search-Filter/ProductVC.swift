@@ -84,11 +84,11 @@ class ProductVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
     }
     
     @IBAction func fiterButtonTapped(_ sender: UIButton) {
-        let nav = self.storyboard?.instantiateViewController(withIdentifier: "FilterNav") as! UINavigationController
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Filter") as! FilterVC
-        vc.productVC = self
-        nav.setViewControllers([vc], animated: true)
-        self.present(nav, animated: true, completion: nil)
+//        let nav = self.storyboard?.instantiateViewController(withIdentifier: "FilterNav") as! UINavigationController
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Filter") as! FilterVC
+//        vc.productVC = self
+//        nav.setViewControllers([vc], animated: true)
+//        self.present(nav, animated: true, completion: nil)
     }
     
     @objc func getData() {

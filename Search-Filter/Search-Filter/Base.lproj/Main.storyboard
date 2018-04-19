@@ -102,6 +102,11 @@
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="kPp-kK-Bfw" id="V7X-kr-eI9"/>
+                                            <outlet property="delegate" destination="kPp-kK-Bfw" id="gp7-92-Dbx"/>
+                                            <outlet property="prefetchDataSource" destination="kPp-kK-Bfw" id="aOc-Yw-VWH"/>
+                                        </connections>
                                     </collectionView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
