@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		244EEF483A38840F7D6416ED /* Pods_Search_Filter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5769EC3B76EF8B8F09AB16B /* Pods_Search_Filter.framework */; };
 		A9E65E86208930E60059E935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E65E85208930E60059E935 /* AppDelegate.swift */; };
 		A9E65E88208930E60059E935 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E65E87208930E60059E935 /* ViewController.swift */; };
 		A9E65E8B208930E60059E935 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E65E89208930E60059E935 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		867F61DA902BE31B23B17FE0 /* Pods-Search-Filter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search-Filter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Search-Filter/Pods-Search-Filter.release.xcconfig"; sourceTree = "<group>"; };
 		A9E65E82208930E60059E935 /* Search-Filter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Search-Filter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E65E85208930E60059E935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9E65E87208930E60059E935 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		A9E65EA1208930E60059E935 /* Search-FilterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Search-FilterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E65EA5208930E60059E935 /* Search_FilterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search_FilterUITests.swift; sourceTree = "<group>"; };
 		A9E65EA7208930E60059E935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5769EC3B76EF8B8F09AB16B /* Pods_Search_Filter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Search_Filter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C22D363A22B858294B0C1E /* Pods-Search-Filter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search-Filter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Search-Filter/Pods-Search-Filter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244EEF483A38840F7D6416ED /* Pods_Search_Filter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38D530D86FAE255160EDC3DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5769EC3B76EF8B8F09AB16B /* Pods_Search_Filter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		934618F7B223F516D926180E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7C22D363A22B858294B0C1E /* Pods-Search-Filter.debug.xcconfig */,
+				867F61DA902BE31B23B17FE0 /* Pods-Search-Filter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A9E65E79208930E60059E935 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				A9E65E99208930E60059E935 /* Search-FilterTests */,
 				A9E65EA4208930E60059E935 /* Search-FilterUITests */,
 				A9E65E83208930E60059E935 /* Products */,
+				934618F7B223F516D926180E /* Pods */,
+				38D530D86FAE255160EDC3DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9E65EAA208930E60059E935 /* Build configuration list for PBXNativeTarget "Search-Filter" */;
 			buildPhases = (
+				0A3408DA9C000AA06D0EAB4B /* [CP] Check Pods Manifest.lock */,
 				A9E65E7E208930E60059E935 /* Sources */,
 				A9E65E7F208930E60059E935 /* Frameworks */,
 				A9E65E80208930E60059E935 /* Resources */,
+				078F6C389C3CD3B6DC398ED2 /* [CP] Embed Pods Frameworks */,
+				5CAEE160AAC736A70ECBA273 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		078F6C389C3CD3B6DC398ED2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Search-Filter/Pods-Search-Filter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A3408DA9C000AA06D0EAB4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5CAEE160AAC736A70ECBA273 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Search-Filter/Pods-Search-Filter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9E65E7E208930E60059E935 /* Sources */ = {
@@ -410,6 +485,7 @@
 		};
 		A9E65EAB208930E60059E935 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7C22D363A22B858294B0C1E /* Pods-Search-Filter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Search-Filter/Info.plist";
@@ -422,6 +498,7 @@
 		};
 		A9E65EAC208930E60059E935 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 867F61DA902BE31B23B17FE0 /* Pods-Search-Filter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Search-Filter/Info.plist";
